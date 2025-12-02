@@ -222,7 +222,7 @@ function App() {
 
       <section id="calendario" className="bg-white py-20 px-4 md:px-8">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-black mb-2 text-center">Calendario 2025</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-black mb-2 text-center">Calendario 2026</h2>
           <div className="h-1 w-20 bg-yellow-400 mx-auto mb-12"></div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
