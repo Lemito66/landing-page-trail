@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Card } from "@/components/ui/card"
-import { KNOW_AS_FIRST_PARAGRAPH, KNOW_AS_SECOND_PARAGRAPH } from "./constants"
+import { KNOW_AS_FIRST_PARAGRAPH, KNOW_AS_SECOND_PARAGRAPH, MISSION, VALUES, VISION } from "./constants/knowAs"
 
 function CountdownTimer({ targetDate, isCompact = false }) {
   const [timeLeft, setTimeLeft] = useState({
@@ -199,42 +199,54 @@ function App() {
           <h2 className="text-4xl md:text-5xl font-bold text-black mb-2 text-center">Quiénes somos</h2>
           <div className="h-1 w-20 bg-yellow-400 mx-auto mb-8"></div>
 
+          {/* ====== Párrafos superiores ====== */}
           <div className="space-y-6 mb-12 text-lg text-gray-800 leading-relaxed">
-            <p className="text-justify">
-              {KNOW_AS_FIRST_PARAGRAPH}
-            </p>
-            <p className="text-justify">
-              {KNOW_AS_SECOND_PARAGRAPH}
-            </p>
+            <p className="text-justify">{KNOW_AS_FIRST_PARAGRAPH}</p>
+            <p className="text-justify">{KNOW_AS_SECOND_PARAGRAPH}</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {[
-              {
-                title: "Seguridad",
-                description: "Protección total con puestos de hidratación, personal médico y rutas bien señalizadas.",
-              },
-              {
-                title: "Naturaleza",
-                description:
-                  "Respeto por el ecosistema. Cada carrera contribuye a la conservación de nuestras montañas.",
-              },
-              {
-                title: "Comunidad",
-                description: "Uniendo a corredores de todas partes para compartir pasión, desafío y amistad.",
-              },
-            ].map((value, idx) => (
-              <Card
-                key={idx}
-                className="p-6 bg-white border-l-4 border-yellow-400 hover:shadow-lg hover:-translate-y-2 transition-all duration-300"
-              >
-                <h3 className="text-2xl font-bold text-black mb-3">{value.title}</h3>
-                <p className="text-gray-600">{value.description}</p>
-              </Card>
-            ))}
+          {/* ====== MISIÓN, VISIÓN Y VALORES ====== */}
+
+          {/* MISIÓN */}
+          <div className="mb-10">
+            <h3 className="text-3xl font-extrabold text-black mb-4 text-center">MISIÓN</h3>
+            <Card className="p-6 bg-white border-l-4 border-yellow-400 hover:shadow-lg hover:-translate-y-2 transition-all duration-300">
+              <p className="text-gray-700 text-lg leading-relaxed text-justify">
+                {MISSION}
+              </p>
+            </Card>
+          </div>
+
+          {/* VISIÓN */}
+          <div className="mb-12">
+            <h3 className="text-3xl font-extrabold text-black mb-4 text-center">VISIÓN</h3>
+            <Card className="p-6 bg-white border-l-4 border-yellow-400 hover:shadow-lg hover:-translate-y-2 transition-all duration-300">
+              <p className="text-gray-700 text-lg leading-relaxed text-justify">
+                {VISION}
+              </p>
+            </Card>
+          </div>
+
+          {/* VALORES */}
+          <div>
+            <h3 className="text-3xl font-extrabold text-black mb-6 text-center">VALORES</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {VALUES.map((value, i) => (
+                <Card
+                  key={i}
+                  className="p-6 bg-white border-l-4 border-yellow-400 hover:shadow-lg hover:-translate-y-2 transition-all duration-300"
+                >
+                  <h4 className="text-xl font-bold text-black mb-2">{value.title}</h4>
+                  <p className="text-gray-700 text-justify text-base">{value.description}</p>
+                </Card>
+              ))}
+
+            </div>
           </div>
         </div>
       </section>
+
+
 
       <section id="calendario" className="bg-white py-20 px-4 md:px-8">
         <div className="max-w-6xl mx-auto">
