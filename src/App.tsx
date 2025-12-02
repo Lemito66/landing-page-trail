@@ -289,64 +289,7 @@ function App() {
         </div>
       </section>
 
-      <section id="contacto" className="bg-yellow-100 py-20 px-4 md:px-8">
-        <div className="max-w-2xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-black mb-2 text-center">Contacto</h2>
-          <div className="h-1 w-20 bg-yellow-400 mx-auto mb-8"></div>
-
-          <p className="text-center text-lg text-gray-800 mb-8">
-            Si tienes dudas sobre inscripciones, rutas o logística, contáctanos. Nos encanta hablar sobre trail.
-          </p>
-
-          <form onSubmit={handleSubmit} className="space-y-6">
-            <div className="space-y-2">
-              <label className="text-black font-semibold">Nombre</label>
-              <Input
-                type="text"
-                name="nombre"
-                value={formData.nombre}
-                onChange={handleInputChange}
-                placeholder="Tu nombre completo"
-                required
-                className="border-2 border-gray-300 focus:border-yellow-400 focus:ring-yellow-400"
-              />
-            </div>
-
-            <div className="space-y-2">
-              <label className="text-black font-semibold">Email</label>
-              <Input
-                type="email"
-                name="email"
-                value={formData.email}
-                onChange={handleInputChange}
-                placeholder="tu@email.com"
-                required
-                className="border-2 border-gray-300 focus:border-yellow-400 focus:ring-yellow-400"
-              />
-            </div>
-
-            <div className="space-y-2">
-              <label className="text-black font-semibold">Mensaje</label>
-              <Textarea
-                name="mensaje"
-                value={formData.mensaje}
-                onChange={handleInputChange}
-                placeholder="Cuéntanos qué quieres saber..."
-                required
-                rows={5}
-                className="border-2 border-gray-300 focus:border-yellow-400 focus:ring-yellow-400 resize-none"
-              />
-            </div>
-
-            <Button
-              type="submit"
-              className="w-full bg-yellow-400 text-black hover:bg-yellow-500 py-3 text-lg font-bold rounded-lg uppercase tracking-wider"
-            >
-              Enviar
-            </Button>
-          </form>
-        </div>
-      </section>
+      
 
       <footer className="bg-black text-white text-center py-6 border-t-4 border-yellow-400">
         <p className="text-lg">© 2025 Trail de las Cumbres. Todos los derechos reservados.</p>
