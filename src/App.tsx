@@ -2,8 +2,6 @@
 
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
 import { Card } from "@/components/ui/card"
 import { KNOW_AS_FIRST_PARAGRAPH, KNOW_AS_SECOND_PARAGRAPH, MISSION, VALUES, VISION } from "./constants/knowAs"
 
