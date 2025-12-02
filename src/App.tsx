@@ -75,28 +75,12 @@ function CountdownTimer({ targetDate, isCompact = false }) {
 function App() {
 
 
-  const events = [
-    {
-        id: 1,
-        name: "Sultana Run: Corazón de la Patria – Primera Edición Solidaria “Km que Sanan”",
-        date: new Date("2026-01-17"),
-        location: "Riobamba, Ecuador",
-        distances: ["5K", "10K"],
-        description: "Un evento urbano lleno de energía y propósito, con distancias de 5 km y 10 km, que se realizará en Riobamba el sábado 17 de enero de 2026 a las 20h00. Una carrera nocturna que une a la comunidad en torno a la solidaridad, el movimiento y el orgullo de nuestra tierra. Un recorrido donde cada kilómetro se convierte en un acto de apoyo, esperanza y transformación social.",
-        inscriptionLink: "https://forms.gle/iaQSyQfdXALnW1Fr8"
-    },
-    {
-        id: 2,
-        name: "Los Dos Gigantes Ultra Trail: “Entre el Sol y la Sombra”",
-        date: new Date("2026-10-24"),
-        location: "Latacunga, Ecuador",
-        distances: ["15K", "Por definir"],
-    },
-]
+  const nextEvent = EVENTS
+    .filter(e => e.date > new Date())
+    .reduce((closest, event) => {
+      return event.date < closest.date ? event : closest;
+    }, EVENTS.find(e => e.date > new Date()) || EVENTS[0]);
 
-  const nextEvent = events.reduce((closest, event) => {
-    return event.date > new Date() && event.date < closest.date ? event : closest
-  }, events[0])
 
 
 
@@ -236,7 +220,7 @@ function App() {
           <div className="h-1 w-16 sm:w-20 bg-yellow-400 mx-auto mb-8 sm:mb-12"></div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
-            {events.map((event) => (
+            {EVENTS.map((event) => (
               <Card
                 key={event.id}
                 className="p-4 sm:p-6 bg-gradient-to-br from-black to-slate-800 text-white border border-yellow-400/30 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col"
