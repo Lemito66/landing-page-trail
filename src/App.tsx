@@ -92,7 +92,7 @@ function App() {
   }
 
   const handleWhatsApp = () => {
-    const phoneNumber = import.meta.env.VITE_PHONE_NUMBER
+    const phoneNumber = import.meta.env.VITE_PHONE_NUMBER_WHATSAPP
     const message = encodeURIComponent("Hola, quiero más información sobre la carrera")
     window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank")
   }
@@ -280,8 +280,26 @@ function App() {
 
 
       <footer className="bg-black text-white text-center py-4 sm:py-6 border-t-4 border-yellow-400 px-4">
-        <p className="text-xs sm:text-sm md:text-base">© 2025 Chimborazo Endurance Series. Todos los derechos reservados.</p>
-      </footer>
+  <div className="space-y-2 sm:space-y-3">
+    <p className="text-xs sm:text-sm md:text-base">
+      © 2025 Chimborazo Endurance Series. Todos los derechos reservados.
+    </p>
+
+    {/* Contacto adicional */}
+    <p className="text-xs sm:text-sm md:text-base font-medium">
+      📞 Teléfono: <span className="font-bold">{import.meta.env.VITE_PHONE_NUMBER}</span>
+    </p>
+    <p className="text-xs sm:text-sm md:text-base font-medium">
+      ✉ Correo: <a 
+        href="mailto:info@chimborazoendurance.com"
+        className="font-bold hover:underline"
+      >
+        chimborazoendurance@gmail.com
+      </a>
+    </p>
+  </div>
+</footer>
+
 
       <button
         onClick={handleWhatsApp}
