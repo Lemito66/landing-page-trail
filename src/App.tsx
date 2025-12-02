@@ -92,8 +92,8 @@ function App() {
   }
 
   const handleWhatsApp = () => {
-    const phoneNumber = "593XXXXXXXXX"
-    const message = encodeURIComponent("Hola, quiero más información sobre la carrera de trail")
+    const phoneNumber = import.meta.env.VITE_PHONE_NUMBER
+    const message = encodeURIComponent("Hola, quiero más información sobre la carrera")
     window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank")
   }
 
