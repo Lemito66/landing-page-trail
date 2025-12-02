@@ -6,7 +6,7 @@ import { Card } from "@/components/ui/card"
 import { KNOW_AS_FIRST_PARAGRAPH, KNOW_AS_SECOND_PARAGRAPH, MISSION, VALUES, VISION } from "./constants/knowAs"
 import { EVENTS } from "./constants/events"
 
-function CountdownTimer({ targetDate, isCompact = false }) {
+function CountdownTimer({ targetDate, isCompact = false }: { targetDate: Date; isCompact?: boolean }) {
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
     hours: 0,
@@ -84,7 +84,7 @@ function App() {
 
 
 
-  const scrollToSection = (id) => {
+  const scrollToSection = (id: string) => {
     const element = document.getElementById(id)
     if (element) {
       element.scrollIntoView({ behavior: "smooth" })
