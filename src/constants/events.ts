@@ -6,7 +6,7 @@ export const EVENTS = [
       location: "Riobamba, Ecuador",
       distances: ["5K", "10K"],
       description: `Un evento urbano lleno de energía y propósito, con distancias de 5 km y 10 km, que se realizará en Riobamba el sábado 17 de enero de 2026 a las 20h00. Una carrera nocturna que une a la comunidad en torno a la solidaridad, el movimiento y el orgullo de nuestra tierra. Un recorrido donde cada kilómetro se convierte en un acto de apoyo, esperanza y transformación social.`,
-      inscriptionLink: "forms-google-link",
+      inscriptionLink: "https://forms.gle/iaQSyQfdXALnW1Fr8",
     },
     {
       id: 2,

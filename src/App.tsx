@@ -257,6 +257,20 @@ function App() {
                   <p className="text-xs sm:text-sm font-semibold text-yellow-400 mb-2 uppercase">Faltan:</p>
                   <CountdownTimer targetDate={event.date} isCompact={true} />
                 </div>
+                {event.inscriptionLink && (
+                  <a
+                    href={event.inscriptionLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block w-full mt-4"
+                  >
+                    <Button
+                      className="bg-yellow-400 text-black hover:bg-yellow-500 px-6 py-3 text-base font-bold rounded-full uppercase tracking-wider w-full"
+                    >
+                      Inscribirse
+                    </Button>
+                  </a>
+                )}
               </Card>
             ))}
           </div>
