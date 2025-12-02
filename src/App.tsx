@@ -1,5 +1,3 @@
-"use client"
-
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
@@ -152,7 +150,7 @@ function App() {
           </div>
 
           <Button
-            onClick={() => scrollToSection("contacto")}
+            onClick={() => scrollToSection("calendario")}
             className="bg-yellow-400 text-black hover:bg-yellow-500 px-6 sm:px-8 py-3 sm:py-6 text-sm sm:text-base md:text-lg font-bold rounded-full uppercase tracking-wider"
           >
             Inscríbete ahora
@@ -280,25 +278,25 @@ function App() {
 
 
       <footer className="bg-black text-white text-center py-4 sm:py-6 border-t-4 border-yellow-400 px-4">
-  <div className="space-y-2 sm:space-y-3">
-    <p className="text-xs sm:text-sm md:text-base">
-      © 2025 Chimborazo Endurance Series. Todos los derechos reservados.
-    </p>
+        <div className="space-y-2 sm:space-y-3">
+          <p className="text-xs sm:text-sm md:text-base">
+            © 2025 Chimborazo Endurance Series. Todos los derechos reservados.
+          </p>
 
-    {/* Contacto adicional */}
-    <p className="text-xs sm:text-sm md:text-base font-medium">
-      📞 Teléfono: <span className="font-bold">{import.meta.env.VITE_PHONE_NUMBER}</span>
-    </p>
-    <p className="text-xs sm:text-sm md:text-base font-medium">
-      ✉ Correo: <a 
-        href="mailto:info@chimborazoendurance.com"
-        className="font-bold hover:underline"
-      >
-        chimborazoendurance@gmail.com
-      </a>
-    </p>
-  </div>
-</footer>
+          {/* Contacto adicional */}
+          <p className="text-xs sm:text-sm md:text-base font-medium">
+            📞 Teléfono: <span className="font-bold">{import.meta.env.VITE_PHONE_NUMBER}</span>
+          </p>
+          <p className="text-xs sm:text-sm md:text-base font-medium">
+            ✉ Correo: <a
+              href="mailto:info@chimborazoendurance.com"
+              className="font-bold hover:underline"
+            >
+              chimborazoendurance@gmail.com
+            </a>
+          </p>
+        </div>
+      </footer>
 
 
       <button
