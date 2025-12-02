@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Card } from "@/components/ui/card"
+import { KNOW_AS_FIRST_PARAGRAPH, KNOW_AS_SECOND_PARAGRAPH } from "./constants"
 
 function CountdownTimer({ targetDate, isCompact = false }) {
   const [timeLeft, setTimeLeft] = useState({
@@ -141,7 +142,7 @@ function App() {
       <header className="sticky top-0 z-50 bg-black/98 backdrop-blur-md shadow-md">
         <div className="max-w-6xl mx-auto px-4 md:px-8 py-4 flex justify-between items-center">
           <div className="flex-shrink-0">
-            <h1 className="text-2xl md:text-3xl font-bold text-yellow-400">Trail de las Cumbres</h1>
+            <h1 className="text-2xl md:text-3xl font-bold text-yellow-400">CHIMBORAZO ENDURANCE SERIES</h1>
           </div>
           <nav className="flex gap-2 md:gap-6 flex-wrap justify-end">
             {["inicio", "quienes-somos", "calendario", "contacto"].map((item) => (
@@ -200,13 +201,10 @@ function App() {
 
           <div className="space-y-6 mb-12 text-lg text-gray-800 leading-relaxed">
             <p className="text-justify">
-              Somos una organización dedicada a promover el trail running, conectando a atletas con la naturaleza. Con
-              más de 5 años de experiencia organizando carreras, nuestro objetivo es crear eventos seguros, desafiantes
-              y memorables en los corazones de las montañas de Ecuador.
+              {KNOW_AS_FIRST_PARAGRAPH}
             </p>
             <p className="text-justify">
-              Creemos en el poder de la comunidad, la seguridad extrema y el respeto por el medio ambiente. Cada carrera
-              es un viaje hacia la superación personal.
+              {KNOW_AS_SECOND_PARAGRAPH}
             </p>
           </div>
 
