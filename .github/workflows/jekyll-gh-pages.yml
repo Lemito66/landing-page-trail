@@ -5,48 +5,54 @@ on:
   push:
     branches:
       - main
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+
+# Permisos para GitHub Pages
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+# Solo un deployment a la vez
 concurrency:
   group: "pages"
   cancel-in-progress: false
 
 jobs:
-  build-deploy:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-      # Checkout the repository
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
-      # Setup Nodejs
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: 18
+          cache: 'npm'
 
-      # Install Dependencies
-      - name: Install Dependencies
-        run: npm install
+      - name: Install dependencies
+        run: npm ci
 
-      # Build the project
       - name: Build project
         run: npm run build
 
-     # Deployment job
+      # 👇 IMPORTANTE: subir la carpeta de build para GitHub Pages
+      - name: Upload production build
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Cambia esto según tu proyecto:
+          # - Vite: ./dist
+          # - Create React App: ./build
+          path: ./dist
+
   deploy:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     needs: build
+
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
