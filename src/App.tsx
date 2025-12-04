@@ -101,7 +101,7 @@ function App() {
         <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8 py-3 sm:py-4 flex justify-between items-center gap-2">
           <div className="flex-shrink-0 min-w-0">
             <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-yellow-400 truncate">
-              Chimborazo Endurance Series
+              Chimborazo Endurance Serie
             </h1>
           </div>
           <nav className="flex gap-1 sm:gap-2 md:gap-4 lg:gap-6 flex-wrap justify-end">
