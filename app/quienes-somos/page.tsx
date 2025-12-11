@@ -7,7 +7,6 @@ function About() {
         <div className="min-h-screen bg-background text-foreground">
             <Navigation />
             <AboutPreview />
-            <MissionVision />
             <Footer />
 
         </div>

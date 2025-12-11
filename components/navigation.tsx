@@ -15,8 +15,8 @@ export function Navigation() {
 
   const navItems = [
     { label: "Inicio", href: "/" },
-    { label: "Quiénes Somos", href: isHomePage ? "#about" : "/#about" },
-    { label: "Misión / Visión", href: isHomePage ? "#mission" : "/#mission" },
+    { label: "Quiénes Somos", href: isHomePage ? "/quienes-somos" : "/quienes-somos" },
+    { label: "Misión / Visión", href: isHomePage ? "/mision-vision" : "/mision-vision" },
     { label: "Calendario 2026", href: "/calendar" },
     { label: "Nuestros Eventos", href: isHomePage ? "#events" : "/#events" },
     { label: "Valores", href: isHomePage ? "#values" : "/#values" },

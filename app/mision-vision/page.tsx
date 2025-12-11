@@ -10,7 +10,6 @@ function MissionAndVission() {
             <MissionVision />
             <ValuesSection />
             <Footer />
-
         </div>
     )
 }

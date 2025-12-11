@@ -14,10 +14,7 @@ export default function Home() {
       <Navigation />
       <Hero />
       <UpcomingEventTimer />
-      <AboutPreview />
-      <MissionVision />
       <EventsGrid />
-      <ValuesSection />
       <Footer />
     </div>
   )
