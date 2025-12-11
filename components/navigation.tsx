@@ -15,11 +15,9 @@ export function Navigation() {
 
   const navItems = [
     { label: "Inicio", href: "/" },
-    { label: "Quiénes Somos", href: isHomePage ? "/quienes-somos" : "/quienes-somos" },
-    { label: "Misión / Visión", href: isHomePage ? "/mision-vision" : "/mision-vision" },
-    { label: "Calendario 2026", href: "/calendar" },
-    { label: "Nuestros Eventos", href: isHomePage ? "#events" : "/#events" },
-    { label: "Valores", href: isHomePage ? "#values" : "/#values" },
+    { label: "Quiénes Somos", href: "/quienes-somos" },
+    { label: "Misión / Visión", href: "/mision-vision" },
+    { label: "Nuestros Eventos", href: "/eventos" },
   ]
 
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
@@ -92,9 +90,6 @@ export function Navigation() {
                 {item.label}
               </a>
             ))}
-            <Link href="/register" className="block">
-              <Button className="w-full bg-accent text-primary hover:bg-accent/90">INSCRÍBETE</Button>
-            </Link>
           </div>
         )}
       </div>
