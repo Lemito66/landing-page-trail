@@ -29,8 +29,13 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="#about" className="hover:text-white transition-colors">
+                <Link href="quienes-somos" className="hover:text-white transition-colors">
                   Quiénes Somos
+                </Link>
+              </li>
+              <li>
+                <Link href="mision-vision" className="hover:text-white transition-colors">
+                  Misión / Visión
                 </Link>
               </li>
               <li>
