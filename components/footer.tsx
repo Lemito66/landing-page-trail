@@ -74,9 +74,6 @@ export function Footer() {
           <div className="space-y-4">
             <h4 className="font-bold text-white">¿Listo para el Desafío?</h4>
             <p className="text-sm text-gray-400 mb-4">Únete a nuestra comunidad de atletas apasionados</p>
-            <button className="w-full bg-accent text-white px-4 py-2 rounded-lg font-bold hover:bg-accent/90 transition-colors text-sm">
-              INSCRÍBETE AHORA
-            </button>
           </div>
         </div>
 

@@ -61,12 +61,7 @@ export function Navigation() {
             ))}
           </div>
 
-          {/* CTA Button */}
-          <div className="hidden lg:block">
-            <Link href="/register">
-              <Button className="bg-accent text-primary hover:bg-accent/90">INSCRÍBETE</Button>
-            </Link>
-          </div>
+         
 
           {/* Mobile Menu Button */}
           <button

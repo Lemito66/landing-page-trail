@@ -35,7 +35,7 @@ export function EventsGrid() {
       participants: "500+",
       description:
         "La carrera de montaña más desafiante de nuestro calendario. Desafía tus límites en los senderos del Chimborazo con una altitud que pone a prueba tu resistencia.",
-      image: "/carrera-monta-a.jpg",
+      image: "/chimborazo-ploma.png",
     },
     {
       id: 2,
@@ -48,7 +48,7 @@ export function EventsGrid() {
       difficulty: "Avanzado",
       participants: "800+",
       description: "Corre a través de la ciudad capital combinando asfalto y senderos en una experiencia urbana única.",
-      image: "/carrera-urbana.jpg",
+      image: "/chimborazo-ploma.png",
     },
     {
       id: 3,
@@ -61,7 +61,7 @@ export function EventsGrid() {
       difficulty: "Avanzado",
       participants: "400+",
       description: "Una experiencia única en el desierto ecuatoriano. Resistencia pura bajo el sol ardiente.",
-      image: "/marat-n-desierto.jpg",
+      image: "/chimborazo-ploma.png",
     },
   ]
 
@@ -81,10 +81,10 @@ export function EventsGrid() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="space-y-12">
             <div className="space-y-4 text-center">
-              <h2 className="text-4xl md:text-5xl font-bold">Nuestros Eventos</h2>
-              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Descubre la variedad de competencias que tenemos para ti en 2026
-              </p>
+              <h2 className="text-4xl md:text-5xl font-bold text-card-foreground">
+                Nuestros Eventos 2026
+              </h2>
+
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
