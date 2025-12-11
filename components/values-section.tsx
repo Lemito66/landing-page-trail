@@ -1,26 +1,59 @@
 "use client"
-
-import { Target, Users, Zap } from "lucide-react"
+import {
+  Target,
+  Users,
+  Zap,
+  Flame,
+  ShieldCheck,
+  Handshake,
+  Award,
+  Leaf,
+  Mountain
+} from "lucide-react"
 
 export function ValuesSection() {
   const values = [
     {
-      icon: Zap,
-      title: "Resiliencia",
+      icon: Flame,
+      title: "Pasión",
       description:
-        "Nos desafiamos a superar nuestros límites cada día, porque en la adversidad encontramos nuestra fortaleza.",
+        "Amor y energía por cada ruta, cada detalle y cada corredor.",
+    },
+    {
+      icon: ShieldCheck,
+      title: "Integridad",
+      description:
+        "Transparencia, respeto y responsabilidad en cada decisión.",
+    },
+    {
+      icon: Handshake,
+      title: "Solidaridad",
+      description:
+        "El deporte como fuerza que une y genera cambio social.",
     },
     {
       icon: Users,
       title: "Comunidad",
       description:
-        "Juntos somos más fuertes. Compartimos experiencias, nos apoyamos y celebramos cada logro en equipo.",
+        "Corredores, voluntarios, instituciones y territorio trabajando juntos.",
     },
     {
-      icon: Target,
+      icon: Award,
       title: "Excelencia",
       description:
-        "Buscamos la perfección en cada detalle, desde la organización de eventos hasta el bienestar de nuestros atletas.",
+        "Planificación, seguridad y logística con estándares de primer nivel.",
+    },
+    {
+      icon: Leaf,
+      title: "Sostenibilidad",
+      description:
+        "Compromiso con la protección de nuestros ecosistemas.",
+    },
+    {
+      icon: Mountain,
+      title: "Identidad",
+      description:
+        "La historia, cultura y grandeza del Chimborazo como esencia.",
     },
   ]
 
