@@ -45,7 +45,7 @@ export function Navigation() {
             <div className="w-10 h-10 bg-accent rounded-lg flex items-center justify-center text-primary font-bold">
               CE
             </div>
-            <span className="hidden sm:inline text-white">CHIMBORAZO ENDURANCE</span>
+            <span className="hidden sm:inline text-white">CHIMBORAZO ENDURANCE SERIES</span>
             <span className="sm:hidden text-white">CE</span>
           </Link>
 

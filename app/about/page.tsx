@@ -37,8 +37,7 @@ export default function AboutPage() {
           <div className="space-y-6 text-center">
             <h1 className="text-5xl md:text-6xl font-bold text-accent">Quiénes Somos</h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Conoce la historia, la misión y la visión detrás de la serie de eventos de resistencia más desafiante de
-              la región
+              
             </p>
           </div>
         </div>

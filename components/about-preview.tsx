@@ -8,7 +8,7 @@ export function AboutPreview() {
           {/* Image */}
           <div className="relative h-96 md:h-[500px] bg-gradient-to-br from-accent/20 to-transparent rounded-2xl border border-border overflow-hidden order-last lg:order-first">
             <img
-              src="/grupo-atletas-celebrando.jpg"
+              src="/chimborazo-ploma.png"
               alt="Comunidad Chimborazo Endurance"
               className="w-full h-full object-cover"
             />
@@ -19,20 +19,13 @@ export function AboutPreview() {
             <div className="inline-block">
               <span className="text-accent font-bold text-sm uppercase tracking-widest">Quiénes Somos</span>
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold text-balance">
-              La comunidad de resistencia más desafiante del Ecuador
-            </h2>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              Somos más que una serie de eventos. Somos una comunidad de atletas apasionados que se desafían a sí
-              mismos, que superan sus límites y que celebran cada victoria juntos.
+            
+            <p className="text-2xl text-muted-foreground leading-relaxed text-justify">
+            Chimborazo Endurance Series nace con la visión de impulsar el deporte, la integración comunitaria y el desarrollo de experiencias que trascienden más allá de la meta. Somos un proyecto deportivo que combina pasión, identidad y territorio, llevando a los corredores a descubrir la fuerza que habita en ellos y la grandeza natural que rodea nuestra provincia. Nuestro propósito es crear eventos que inspiren, conecten y transformen. Creemos en el poder del deporte para sanar, unir y desafiar los límites personales. Por ello, diseñamos competencias que mezclan corazón, historia y naturaleza, brindando a cada participante una vivencia auténtica y profundamente significativa.
             </p>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              Desde 2020, hemos organizado competencias que ponen a prueba la resistencia física y mental de nuestros
-              participantes en los escenarios más desafiantes de la región.
+            <p className="text-2xl text-muted-foreground leading-relaxed text-justify">
+            En Chimborazo Endurance Series nos mueve el compromiso con la excelencia, la sostenibilidad y el impacto positivo. Trabajamos para que cada evento sea más que una carrera: sea una experiencia que inspire y deje huella. Somos deporte, somos territorio, somos resistencia. Y estamos apenas comenzando.
             </p>
-            <button className="bg-accent text-accent-foreground px-6 py-2 rounded-lg font-bold hover:bg-accent/90 transition-colors mt-4">
-              Conocer Más
-            </button>
           </div>
         </div>
       </div>

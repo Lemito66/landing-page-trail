@@ -19,6 +19,8 @@ export function Hero() {
               CHIMBORAZO
               <br />
               <span className="text-accent">ENDURANCE</span>
+              <br />
+              SERIES
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-foreground/90 max-w-3xl mx-auto px-4 leading-relaxed">
               Desafía tus límites en la serie de eventos de resistencia más exigente de la región
