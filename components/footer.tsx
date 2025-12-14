@@ -39,13 +39,8 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="#events" className="hover:text-white transition-colors">
+                <Link href="/eventos" className="hover:text-white transition-colors">
                   Eventos
-                </Link>
-              </li>
-              <li>
-                <Link href="/calendar" className="hover:text-white transition-colors">
-                  Calendario
                 </Link>
               </li>
             </ul>
@@ -82,13 +77,13 @@ export function Footer() {
           <div className="flex flex-col md:flex-row items-center justify-between text-sm text-gray-400">
             <p>&copy; 2026 Chimborazo Endurance Series. Todos los derechos reservados.</p>
             <div className="flex gap-6 mt-4 md:mt-0">
-              <a href="#" className="hover:text-white transition-colors">
+              <a href="/" className="hover:text-white transition-colors">
                 Privacidad
               </a>
-              <a href="#" className="hover:text-white transition-colors">
+              <a href="/" className="hover:text-white transition-colors">
                 Términos
               </a>
-              <a href="#" className="hover:text-white transition-colors">
+              <a href="/" className="hover:text-white transition-colors">
                 Contacto
               </a>
             </div>

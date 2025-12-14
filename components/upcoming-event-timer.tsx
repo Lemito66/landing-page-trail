@@ -1,32 +1,17 @@
 "use client"
 
+import { EVENTS } from "@/constants/events.constants"
 import { CountdownTimer } from "./countdown-timer"
 
-interface Event {
-  name: string
-  dateObject: string
-}
+
 
 export function UpcomingEventTimer() {
-  const events: Event[] = [
-    {
-      name: "Trail Chimborazo",
-      dateObject: "2026-01-17",
-    },
-    {
-      name: "Urban Challenge",
-      dateObject: "2026-10-24",
-    },
-    {
-      name: "Desert Marathon",
-      dateObject: "2026-05-24",
-    },
-  ]
+
 
   const getUpcomingEvent = () => {
     const now = new Date()
-    const upcoming = events.find((event) => new Date(event.dateObject) > now)
-    return upcoming || events[0]
+    const upcoming = EVENTS.find((event) => new Date(event.dateObject) > now)
+    return upcoming || EVENTS[0]
   }
 
   const upcomingEvent = getUpcomingEvent()
