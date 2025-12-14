@@ -1,0 +1,127 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Updated color scheme to Chimborazo suggested palette */
+  /* Azul Profundo, Nieve Andina, Rojo Altitud, Verde Ruta Viva, Basalto */
+  --background: #0b2e4a;
+  --foreground: #f4f6f9;
+  --card: #f4f6f9;
+  --card-foreground: #0b2e4a;
+  --popover: #f4f6f9;
+  --popover-foreground: #0b2e4a;
+  --primary: #0b2e4a;
+  --primary-foreground: #f4f6f9;
+  --secondary: #3b8d3b;
+  --secondary-foreground: #f4f6f9;
+  --muted: #9ca3af;
+  --muted-foreground: #6b7280;
+  --accent: #c21807;
+  --accent-foreground: #ffffff;
+  --destructive: #c21807;
+  --destructive-foreground: #ffffff;
+  --border: #d1d5db;
+  --input: #e5e7eb;
+  --ring: #c21807;
+  --chart-1: #c21807;
+  --chart-2: #3b8d3b;
+  --chart-3: #0b2e4a;
+  --chart-4: #f4f6f9;
+  --chart-5: #9ca3af;
+  --radius: 0.625rem;
+  --sidebar: #0b2e4a;
+  --sidebar-foreground: #f4f6f9;
+  --sidebar-primary: #0b2e4a;
+  --sidebar-primary-foreground: #f4f6f9;
+  --sidebar-accent: #c21807;
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: #d1d5db;
+  --sidebar-ring: #c21807;
+}
+
+.dark {
+  --background: #0b2e4a;
+  --foreground: #f4f6f9;
+  --card: #0b2e4a;
+  --card-foreground: #f4f6f9;
+  --popover: #0b2e4a;
+  --popover-foreground: #f4f6f9;
+  --primary: #f4f6f9;
+  --primary-foreground: #0b2e4a;
+  --secondary: #3b8d3b;
+  --secondary-foreground: #f4f6f9;
+  --muted: #9ca3af;
+  --muted-foreground: #d1d5db;
+  --accent: #c21807;
+  --accent-foreground: #ffffff;
+  --destructive: #c21807;
+  --destructive-foreground: #ffffff;
+  --border: #3b3b3b;
+  --input: #4b4b4b;
+  --ring: #c21807;
+  --chart-1: #c21807;
+  --chart-2: #3b8d3b;
+  --chart-3: #0b2e4a;
+  --chart-4: #f4f6f9;
+  --chart-5: #9ca3af;
+  --sidebar: #1a1a1a;
+  --sidebar-foreground: #f4f6f9;
+  --sidebar-primary: #f4f6f9;
+  --sidebar-primary-foreground: #0b2e4a;
+  --sidebar-accent: #c21807;
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: #3b3b3b;
+  --sidebar-ring: #c21807;
+}
+
+@theme inline {
+  --font-sans: "Geist", "Geist Fallback";
+  --font-mono: "Geist Mono", "Geist Mono Fallback";
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
