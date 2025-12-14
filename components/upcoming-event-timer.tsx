@@ -11,11 +11,11 @@ export function UpcomingEventTimer() {
   const events: Event[] = [
     {
       name: "Trail Chimborazo",
-      dateObject: "2026-03-15",
+      dateObject: "2026-01-17",
     },
     {
       name: "Urban Challenge",
-      dateObject: "2026-04-19",
+      dateObject: "2026-10-24",
     },
     {
       name: "Desert Marathon",

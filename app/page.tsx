@@ -14,7 +14,6 @@ export default function Home() {
       <Navigation />
       <Hero />
       <UpcomingEventTimer />
-      <EventsGrid />
       <Footer />
     </div>
   )
