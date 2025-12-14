@@ -22,10 +22,10 @@ export function UpcomingEventTimer() {
         <div className="text-center space-y-8">
           <div className="space-y-4">
             <h2 className="text-3xl md:text-4xl font-bold">Próximo Evento</h2>
-            <p className="text-muted-foreground text-lg">Prepárate para el desafío más emocionante del año</p>
+            <p className="text-2xl text-foreground/90 leading-relaxed ">Prepárate para el desafío más emocionante del año</p>
           </div>
 
-          <CountdownTimer eventDate={upcomingEvent.dateObject} eventName={upcomingEvent.name} />
+          <CountdownTimer eventDate={upcomingEvent.dateObject} eventName={upcomingEvent.name} inscriptionLink={upcomingEvent.inscriptionLink}/>
         </div>
       </div>
     </section>

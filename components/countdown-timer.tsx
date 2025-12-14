@@ -4,10 +4,11 @@ import { useEffect, useState } from "react"
 
 interface CountdownTimerProps {
   eventDate: string
-  eventName?: string
+  eventName?: string,
+  inscriptionLink?: string
 }
 
-export function CountdownTimer({ eventDate, eventName }: CountdownTimerProps) {
+export function CountdownTimer({ eventDate, eventName, inscriptionLink }: CountdownTimerProps) {
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
     hours: 0,
@@ -46,7 +47,7 @@ export function CountdownTimer({ eventDate, eventName }: CountdownTimerProps) {
 
   return (
     <div className="space-y-4">
-      {eventName && <h3 className="text-lg font-semibold text-accent">{eventName}</h3>}
+      {eventName && <h1 className="text-2xl font-semibold text-accent">{eventName}</h1>}
       <div className="grid grid-cols-4 gap-2 sm:gap-4">
         <div className="bg-accent/10 border border-accent/20 rounded-lg p-3 sm:p-4 text-center">
           <div className="text-2xl sm:text-3xl font-bold text-accent">{timeLeft.days}</div>
@@ -64,6 +65,24 @@ export function CountdownTimer({ eventDate, eventName }: CountdownTimerProps) {
           <div className="text-2xl sm:text-3xl font-bold text-accent">{timeLeft.seconds}</div>
           <div className="text-xs sm:text-sm text-muted-foreground uppercase tracking-widest mt-1">Seg</div>
         </div>
+        <div className="col-span-4 mt-4 text-center">
+          {inscriptionLink?.trim() ? (
+            <a
+              href={inscriptionLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block px-6 py-3 bg-accent text-accent-foreground font-semibold rounded-lg hover:bg-accent/90 transition-colors"
+            >
+              Inscripciones Abiertas
+            </a>
+          ) : (
+            <span className="inline-block px-6 py-3 bg-muted text-muted-foreground font-semibold rounded-lg">
+              Muy pronto
+            </span>
+          )}
+        </div>
+
+
       </div>
     </div>
   )
