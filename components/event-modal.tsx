@@ -1,20 +1,9 @@
 "use client"
 import { X } from "lucide-react"
 import { CountdownTimer } from "./countdown-timer"
+import { Event } from "@/interface/events.interface"
 
-interface Event {
-  id: number
-  name: string
-  date: string
-  dateObject: string
-  location: string
-  distance: string
-  elevation: string
-  difficulty: string
-  participants: string
-  description: string
-  image: string
-}
+
 
 interface EventModalProps {
   event: Event | null
@@ -92,9 +81,24 @@ export function EventModal({ event, isOpen, onClose }: EventModalProps) {
             </div>
 
             {/* Register Button */}
-            <button className="w-full bg-accent text-accent-foreground py-3 rounded-lg font-bold hover:bg-accent/90 transition-colors">
-              Inscribirse Ahora
-            </button>
+            {event.inscriptionLink?.trim() ? (
+              <a
+                href={event.inscriptionLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full inline-flex items-center justify-center bg-accent text-accent-foreground py-3 rounded-lg font-bold hover:bg-accent/90 transition-colors"
+              >
+                Inscribirse Ahora
+              </a>
+            ) : (
+              <button
+                type="button"
+                disabled
+                className="w-full inline-flex items-center justify-center py-3 rounded-lg font-bold bg-muted text-muted-foreground cursor-not-allowed"
+              >
+                Muy pronto
+              </button>
+            )}
           </div>
         </div>
       </div>
