@@ -1,12 +1,9 @@
 "use client"
 import { Navigation } from "@/components/navigation"
 import { Hero } from "@/components/hero"
-import { AboutPreview } from "@/components/about-preview"
-import { MissionVision } from "@/components/mission-vision"
-import { EventsGrid } from "@/components/events-grid"
-import { ValuesSection } from "@/components/values-section"
 import { UpcomingEventTimer } from "@/components/upcoming-event-timer"
 import { Footer } from "@/components/footer"
+import WhatsappButton from "@/components/whatsapp-button"
 
 export default function Home() {
   return (
@@ -15,6 +12,7 @@ export default function Home() {
       <Hero />
       <UpcomingEventTimer />
       <Footer />
+      <WhatsappButton />
     </div>
   )
 }

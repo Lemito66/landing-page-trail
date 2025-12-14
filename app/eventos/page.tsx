@@ -1,6 +1,7 @@
 import { EventsGrid } from '@/components/events-grid'
 import { Footer } from '@/components/footer'
 import { Navigation } from '@/components/navigation'
+import WhatsappButton from '@/components/whatsapp-button'
 
 function Events() {
     return (
@@ -8,6 +9,7 @@ function Events() {
             <Navigation />
             <EventsGrid />
             <Footer />
+            <WhatsappButton />
         </div>
     )
 }
