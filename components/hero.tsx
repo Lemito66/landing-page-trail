@@ -1,5 +1,7 @@
 "use client"
 
+import { UpcomingEventTimer } from "./upcoming-event-timer"
+
 export function Hero() {
   return (
     <section id="hero" className="relative w-full min-h-screen overflow-hidden">
@@ -26,32 +28,7 @@ export function Hero() {
               Desafía tus límites en la serie de eventos de resistencia más exigente de la región
             </p>
           </div>
-
-          {/* Buttons with responsive sizing */}
-          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center pt-4 sm:pt-6">
-            <button className="bg-accent text-accent-foreground px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-bold hover:bg-accent/90 transition-colors text-base sm:text-lg w-full sm:w-auto">
-              INSCRÍBETE AHORA
-            </button>
-            <button className="border-2 border-accent text-accent px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-bold hover:bg-accent/10 transition-colors text-base sm:text-lg w-full sm:w-auto">
-              MÁS INFORMACIÓN
-            </button>
-          </div>
-
-          {/* Statistics section with responsive layout */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-4 lg:gap-8 pt-8 sm:pt-10 lg:pt-12">
-            <div className="space-y-2">
-              <div className="text-3xl sm:text-4xl lg:text-5xl font-bold text-accent">12+</div>
-              <div className="text-xs sm:text-sm lg:text-base text-foreground/80">Eventos Anuales</div>
-            </div>
-            <div className="space-y-2">
-              <div className="text-3xl sm:text-4xl lg:text-5xl font-bold text-accent">5000+</div>
-              <div className="text-xs sm:text-sm lg:text-base text-foreground/80">Atletas Registrados</div>
-            </div>
-            <div className="space-y-2">
-              <div className="text-3xl sm:text-4xl lg:text-5xl font-bold text-accent">2026</div>
-              <div className="text-xs sm:text-sm lg:text-base text-foreground/80">Próxima Temporada</div>
-            </div>
-          </div>
+          <UpcomingEventTimer />
         </div>
       </div>
     </section>
