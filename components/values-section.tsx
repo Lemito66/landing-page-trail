@@ -63,9 +63,6 @@ export function ValuesSection() {
         <div className="space-y-12">
           <div className="space-y-4 text-center">
             <h2 className="text-4xl md:text-5xl font-bold">Nuestros Valores</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Principios que guían cada evento y cada decisión que tomamos
-            </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
