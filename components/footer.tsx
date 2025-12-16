@@ -14,7 +14,7 @@ export function Footer() {
               <div className="w-10 h-10 bg-accent rounded-lg flex items-center justify-center text-white font-bold">
                 CE
               </div>
-              <span className="font-bold text-white">CHIMBORAZO</span>
+              <span className="font-bold text-white">CHIMBORAZO ENDURANCE SERIES</span>
             </div>
             <p className="text-sm text-gray-400">La serie de eventos de resistencia más desafiante de América Latina</p>
           </div>
