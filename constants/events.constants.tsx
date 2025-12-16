@@ -3,7 +3,7 @@ import { Event } from "@/interface/events.interface";
 export const EVENTS: Event[] = [
     {
       id: 1,
-      name: "Sultana Run: Corazón de la Patria – Primera Edición Solidaria “Km que Sanan”",
+      name: "Sultana Run: “Km que Sanan”",
       date: "17 de Enero, 20:00",
       dateObject: "2026-01-17",
       location: "Riobamba, Ecuador",

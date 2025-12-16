@@ -67,7 +67,7 @@ export function Footer() {
 
           {/* CTA */}
           <div className="space-y-4">
-            <h4 className="font-bold text-white">¿Listo para el Desafío?</h4>
+            <h4 className="font-bold text-white">¿Listo para el desafío?</h4>
             <p className="text-sm text-gray-400 mb-4">Únete a nuestra comunidad de atletas apasionados</p>
           </div>
         </div>
