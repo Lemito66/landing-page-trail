@@ -17,13 +17,15 @@ export function Hero() {
         <div className="w-full max-w-5xl space-y-6 sm:space-y-8 lg:space-y-10 text-center">
           {/* Title section with responsive typography */}
           <div className="space-y-4 sm:space-y-6">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-balance leading-tight text-foreground">
-              CHIMBORAZO
-              <br />
-              <span className="text-accent">ENDURANCE</span>
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-tight text-foreground">
+              <span className="sm:whitespace-nowrap">
+                CHIMBORAZO{" "}
+                <span className="text-accent">ENDURANCE</span>
+              </span>
               <br />
               SERIES
             </h1>
+
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-foreground/90 max-w-3xl mx-auto px-4 leading-relaxed">
               Desafía tus límites en la serie de eventos de resistencia más exigente de la región
             </p>
