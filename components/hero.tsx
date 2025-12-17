@@ -1,6 +1,6 @@
 "use client"
 
-import { UpcomingEventTimer } from "./upcoming-event-timer"
+import { UpcomingEventTimer } from "@/components/upcoming-event-timer"
 
 export function Hero() {
   return (
