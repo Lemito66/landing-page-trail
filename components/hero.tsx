@@ -27,7 +27,13 @@ export function Hero() {
             </h1>
 
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-foreground/90 max-w-3xl mx-auto px-4 leading-relaxed">
-              Desafía tus límites en la serie de eventos de resistencia más exigente de la región
+            Somos aventura.
+            </p>
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-foreground/90 max-w-3xl mx-auto px-4 leading-relaxed">
+            Somos resistencia.
+            </p>
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-foreground/90 max-w-3xl mx-auto px-4 leading-relaxed">
+            Somos velocidad.
             </p>
           </div>
           <UpcomingEventTimer />
