@@ -123,6 +123,6 @@
   }
   body {
     @apply bg-background text-foreground;
-    font-family: var(--font-montserrat);
+    font-family: var(--font-montserrat) !important;
   }
 }
