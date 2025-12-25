@@ -8,7 +8,7 @@ export function AboutPreview() {
           {/* Image */}
           <div className="relative h-96 md:h-[500px] bg-gradient-to-br from-accent/20 to-transparent rounded-2xl border border-border overflow-hidden order-last lg:order-first">
             <img
-              src="/chimborazo-ploma.png"
+              src="/chimborazo-ploma.jpg"
               alt="Comunidad Chimborazo Endurance"
               className="w-full h-full object-cover"
             />

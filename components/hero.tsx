@@ -6,7 +6,7 @@ export function Hero() {
   return (
     <section id="hero" className="relative w-full min-h-screen overflow-hidden">
       <img
-        src="/chimborazo-ploma.png"
+        src="/chimborazo-ploma.jpg"
         alt="Chimborazo mountain landscape"
         className="absolute inset-0 w-full h-full object-cover"
       />
@@ -27,13 +27,13 @@ export function Hero() {
             </h1>
 
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-foreground/90 max-w-3xl mx-auto px-4 leading-relaxed">
-            Somos aventura.
+              Somos aventura.
             </p>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-foreground/90 max-w-3xl mx-auto px-4 leading-relaxed">
-            Somos resistencia.
+              Somos resistencia.
             </p>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-foreground/90 max-w-3xl mx-auto px-4 leading-relaxed">
-            Somos velocidad.
+              Somos velocidad.
             </p>
           </div>
           <UpcomingEventTimer />
