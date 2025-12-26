@@ -6,7 +6,7 @@ export interface Event {
     location: string
     distance: string
     difficulty: string
-    description: string
+    description: string[]
     image: string,
     inscriptionLink?: string
 }

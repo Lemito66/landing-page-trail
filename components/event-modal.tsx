@@ -48,8 +48,12 @@ export function EventModal({ event, isOpen, onClose }: EventModalProps) {
             {/* Event Details */}
             <div className="space-y-6">
               <div>
-                <h3 className="text-lg font-bold mb-2">Descripción</h3>
-                <p className="text-muted-foreground leading-relaxed">{event.description}</p>
+                <h3 className="text-muted-foreground  text-lg font-bold mb-2">Descripción</h3>
+                {event.description.map((paragraph, index) => (
+                  <p key={index} className="text-muted-foreground leading-relaxed text-justify mb-4 last:mb-0">
+                    {paragraph}
+                  </p>
+                ))}
               </div>
 
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
