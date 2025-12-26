@@ -24,7 +24,14 @@ export function UpcomingEventTimer() {
             <h2 className="text-3xl md:text-4xl font-bold">Próximo Evento</h2>
           </div>
 
-          <CountdownTimer eventDate={upcomingEvent.dateObject} eventName={upcomingEvent.name} inscriptionLink={upcomingEvent.inscriptionLink}/>
+          <CountdownTimer eventDate={upcomingEvent.dateObject} eventName={upcomingEvent.name} inscriptionLink={upcomingEvent.inscriptionLink} />
+          <a
+            href={upcomingEvent.inscriptionLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block px-6 py-3 bg-accent text-white font-semibold rounded-lg hover:bg-accent-dark transition"  >
+            Inscribirse Ahora
+          </a>
         </div>
       </div>
     </section>
