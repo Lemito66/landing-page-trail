@@ -65,24 +65,6 @@ export function CountdownTimer({ eventDate, eventName, inscriptionLink }: Countd
           <div className="text-2xl sm:text-3xl font-bold text-accent">{timeLeft.seconds}</div>
           <div className="text-xs sm:text-sm text-muted-foreground uppercase tracking-widest mt-1">Seg</div>
         </div>
-        <div className="col-span-4 mt-4 text-center">
-          {inscriptionLink?.trim() ? (
-            <a
-              href={inscriptionLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block px-6 py-3 bg-accent text-accent-foreground font-semibold rounded-lg hover:bg-accent/90 transition-colors"
-            >
-              Inscripciones Abiertas
-            </a>
-          ) : (
-            <span className="inline-block px-6 py-3 bg-muted text-muted-foreground font-semibold rounded-lg">
-              Muy pronto
-            </span>
-          )}
-        </div>
-
-
       </div>
     </div>
   )
