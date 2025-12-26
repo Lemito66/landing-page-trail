@@ -65,10 +65,6 @@ export function EventsGrid() {
                         <div className="font-bold text-accent">{evt.distance}</div>
                         <div className="text-xs text-muted-foreground">Distancia</div>
                       </div>
-                      <div>
-                        <div className="font-bold text-accent">+{evt.elevation}</div>
-                        <div className="text-xs text-muted-foreground">Elevación</div>
-                      </div>
                     </div>
 
                     <button

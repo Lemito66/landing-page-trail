@@ -58,16 +58,8 @@ export function EventModal({ event, isOpen, onClose }: EventModalProps) {
                   <div className="font-bold text-accent text-lg">{event.distance}</div>
                 </div>
                 <div className="bg-background p-4 rounded-lg border border-border">
-                  <div className="text-sm text-muted-foreground mb-1">Elevación</div>
-                  <div className="font-bold text-accent text-lg">+{event.elevation}</div>
-                </div>
-                <div className="bg-background p-4 rounded-lg border border-border">
                   <div className="text-sm text-muted-foreground mb-1">Dificultad</div>
                   <div className="font-bold text-accent text-lg">{event.difficulty}</div>
-                </div>
-                <div className="bg-background p-4 rounded-lg border border-border">
-                  <div className="text-sm text-muted-foreground mb-1">Participantes</div>
-                  <div className="font-bold text-accent text-lg">{event.participants}</div>
                 </div>
                 <div className="bg-background p-4 rounded-lg border border-border">
                   <div className="text-sm text-muted-foreground mb-1">Fecha</div>

@@ -5,9 +5,7 @@ export interface Event {
     dateObject: string
     location: string
     distance: string
-    elevation: string
     difficulty: string
-    participants: string
     description: string
     image: string,
     inscriptionLink?: string
