@@ -17,7 +17,7 @@ export function Navigation() {
     { label: "Inicio", href: "/" },
     { label: "Quiénes Somos", href: "/quienes-somos" },
     { label: "Misión / Visión", href: "/mision-vision" },
-    { label: "Nuestros Eventos", href: "/eventos" },
+    { label: "Eventos Emill", href: "/eventos" },
   ]
 
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
