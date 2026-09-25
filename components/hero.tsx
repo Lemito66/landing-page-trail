@@ -18,7 +18,7 @@ export function Hero() {
           {/* Title section with responsive typography */}
           <div className="space-y-4 sm:space-y-6">
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-balance leading-tight text-foreground">
-              CHIMBORAZO
+              CHIMBORAZO00000
               <br />
               <span className="text-accent">ENDURANCE</span>
 
