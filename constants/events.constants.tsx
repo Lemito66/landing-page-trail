@@ -34,9 +34,9 @@ export const EVENTS: Event[] = [
   },
   {
     id: 3,
-    name: "Los Dos Gigantes Ultra Trail “Entre el sol y la sombra”",
-    date: "24 y 25 Octubre 2026",
-    dateObject: "2026-10-24",
+    name: "TU ÚLTIMO DESAFÍO DEL AÑO A:",
+        date: "13 de Diciembre 2026",
+    dateObject: "2026-12-13T00:00:00-05:00",
     location: "Reserva Faunistica de Chimborazo, Ecuador",
     distance: "Proximanente",
     difficulty: "Intermedio / Avanzado",
@@ -48,6 +48,6 @@ export const EVENTS: Event[] = [
       "Entre el sol y la sombra, cada corredor escribe su propia historia.",
     ],
     image: "/chimborazo-ploma.jpg",
-    inscriptionLink: "",
+    inscriptionLink: "https://forms.gle/UCHYrQdXCpB6w3XB9",
   },
 ];

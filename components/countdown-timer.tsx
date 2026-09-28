@@ -47,23 +47,23 @@ export function CountdownTimer({ eventDate, eventName, inscriptionLink }: Countd
 
   return (
     <div className="space-y-4">
-      {eventName && <h1 className="text-2xl font-semibold text-accent">{eventName}</h1>}
+      {eventName && <h1 className="text-2xl font-semibold text-white">{eventName}</h1>}
       <div className="grid grid-cols-4 gap-2 sm:gap-4">
         <div className="bg-accent/10 border border-accent/20 rounded-lg p-3 sm:p-4 text-center">
-          <div className="text-2xl sm:text-3xl font-bold text-accent">{timeLeft.days}</div>
-          <div className="text-xs sm:text-sm text-muted-foreground uppercase tracking-widest mt-1">Días</div>
+          <div className="text-2xl sm:text-3xl font-bold text-white">{timeLeft.days}</div>
+          <div className="text-xs sm:text-sm text-white uppercase tracking-widest mt-1">Días</div>
         </div>
         <div className="bg-accent/10 border border-accent/20 rounded-lg p-3 sm:p-4 text-center">
-          <div className="text-2xl sm:text-3xl font-bold text-accent">{timeLeft.hours}</div>
-          <div className="text-xs sm:text-sm text-muted-foreground uppercase tracking-widest mt-1">Horas</div>
+          <div className="text-2xl sm:text-3xl font-bold text-white">{timeLeft.hours}</div>
+          <div className="text-xs sm:text-sm text-white uppercase tracking-widest mt-1">Horas</div>
         </div>
         <div className="bg-accent/10 border border-accent/20 rounded-lg p-3 sm:p-4 text-center">
-          <div className="text-2xl sm:text-3xl font-bold text-accent">{timeLeft.minutes}</div>
-          <div className="text-xs sm:text-sm text-muted-foreground uppercase tracking-widest mt-1">Min</div>
+          <div className="text-2xl sm:text-3xl font-bold text-white">{timeLeft.minutes}</div>
+          <div className="text-xs sm:text-sm text-white uppercase tracking-widest mt-1">Min</div>
         </div>
         <div className="bg-accent/10 border border-accent/20 rounded-lg p-3 sm:p-4 text-center">
-          <div className="text-2xl sm:text-3xl font-bold text-accent">{timeLeft.seconds}</div>
-          <div className="text-xs sm:text-sm text-muted-foreground uppercase tracking-widest mt-1">Seg</div>
+          <div className="text-2xl sm:text-3xl font-bold text-white">{timeLeft.seconds}</div>
+          <div className="text-xs sm:text-sm text-white uppercase tracking-widest mt-1">Seg</div>
         </div>
       </div>
     </div>
