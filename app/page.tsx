@@ -1,4 +1,5 @@
 "use client"
+
 import { Navigation } from "@/components/navigation"
 import { Hero } from "@/components/hero"
 import { UpcomingEventTimer } from "@/components/upcoming-event-timer"
