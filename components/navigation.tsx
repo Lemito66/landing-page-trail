@@ -59,10 +59,14 @@ export function Navigation() {
             </span>
           </Link>
 
-          {/* Desktop Navigation */}
+          {/* Navegación escritorio */}
           <div className="hidden lg:flex gap-1">
-            {navItems.map((item) =>
+
+            {navItems.map((item) => (
+
               item.label === "Carreras" ? (
+
+                /* SUBMENÚ CARRERAS */
                 <div key={item.label} className="relative group">
 
                   <button
@@ -74,52 +78,107 @@ export function Navigation() {
                   <div className="absolute left-0 top-full hidden group-hover:block pt-2 w-64">
                     <div className="bg-primary border border-accent rounded-md shadow-lg overflow-hidden">
 
-                      <a
+                      <Link
                         href="/los-dos-gigantes"
                         className="block px-4 py-3 text-sm text-white hover:text-accent hover:bg-black/20 transition-colors"
                       >
                         Los Dos Gigantes Ultra Trail
-                      </a>
+                      </Link>
 
-                      <a
+                      <Link
                         href="/duatlon-rio"
                         className="block px-4 py-3 text-sm text-white hover:text-accent hover:bg-black/20 transition-colors"
                       >
                         Duatlón Río
-                      </a>
+                      </Link>
 
                     </div>
                   </div>
 
                 </div>
+
+              ) : item.label === "Distancias" ? (
+
+                /* SUBMENÚ DISTANCIAS */
+                <div key={item.label} className="relative group">
+
+                  <button
+                    className="px-3 py-2 text-sm font-medium text-white hover:text-accent transition-colors"
+                  >
+                    Distancias ▾
+                  </button>
+
+                  <div className="absolute left-0 top-full hidden group-hover:block pt-2 w-56">
+                    <div className="bg-primary border border-accent rounded-md shadow-lg overflow-hidden">
+
+                      <Link
+                        href="/distancias/5k"
+                        className="block px-4 py-3 text-sm text-white hover:text-accent hover:bg-black/20 transition-colors"
+                      >
+                        5K
+                      </Link>
+
+                      <Link
+                        href="/distancias/10k"
+                        className="block px-4 py-3 text-sm text-white hover:text-accent hover:bg-black/20 transition-colors"
+                      >
+                        10K
+                      </Link>
+
+                      <Link
+                        href="/distancias/20k"
+                        className="block px-4 py-3 text-sm text-white hover:text-accent hover:bg-black/20 transition-colors"
+                      >
+                        20K
+                      </Link>
+
+                      <Link
+                        href="/distancias/30k"
+                        className="block px-4 py-3 text-sm text-white hover:text-accent hover:bg-black/20 transition-colors"
+                      >
+                        30K
+                      </Link>
+
+                    </div>
+                  </div>
+
+                </div>
+
               ) : (
-                <a
+
+                <Link
                   key={item.href}
                   href={item.href}
                   onClick={(e) => handleNavClick(e, item.href)}
                   className="px-3 py-2 text-sm font-medium text-white hover:text-accent transition-colors"
                 >
                   {item.label}
-                </a>
+                </Link>
+
               )
-            )}
+
+            ))}
+
           </div>
 
-          {/* Mobile Menu Button */}
+          {/* Botón menú móvil */}
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="lg:hidden p-2 text-white hover:text-accent transition-colors"
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
+
         </div>
 
-        {/* Mobile Navigation */}
+        {/* Navegación móvil */}
         {isOpen && (
           <div className="lg:hidden pb-4 space-y-2">
 
-            {navItems.map((item) =>
+            {navItems.map((item) => (
+
               item.label === "Carreras" ? (
+
                 <div key={item.label}>
 
                   <div className="px-3 py-2 text-sm font-medium text-white">
@@ -128,39 +187,90 @@ export function Navigation() {
 
                   <div className="pl-6 space-y-1">
 
-                    <a
+                    <Link
                       href="/los-dos-gigantes"
                       onClick={() => setIsOpen(false)}
                       className="block px-3 py-2 text-sm font-medium text-white hover:text-accent transition-colors"
                     >
                       Los Dos Gigantes Ultra Trail
-                    </a>
+                    </Link>
 
-                    <a
+                    <Link
                       href="/duatlon-rio"
                       onClick={() => setIsOpen(false)}
                       className="block px-3 py-2 text-sm font-medium text-white hover:text-accent transition-colors"
                     >
                       Duatlón Río
-                    </a>
+                    </Link>
 
                   </div>
 
                 </div>
+
+              ) : item.label === "Distancias" ? (
+
+                <div key={item.label}>
+
+                  <div className="px-3 py-2 text-sm font-medium text-white">
+                    Distancias
+                  </div>
+
+                  <div className="pl-6 space-y-1">
+
+                    <Link
+                      href="/distancias/5k"
+                      onClick={() => setIsOpen(false)}
+                      className="block px-3 py-2 text-sm font-medium text-white hover:text-accent transition-colors"
+                    >
+                      5K
+                    </Link>
+
+                    <Link
+                      href="/distancias/10k"
+                      onClick={() => setIsOpen(false)}
+                      className="block px-3 py-2 text-sm font-medium text-white hover:text-accent transition-colors"
+                    >
+                      10K
+                    </Link>
+
+                    <Link
+                      href="/distancias/20k"
+                      onClick={() => setIsOpen(false)}
+                      className="block px-3 py-2 text-sm font-medium text-white hover:text-accent transition-colors"
+                    >
+                      20K
+                    </Link>
+
+                    <Link
+                      href="/distancias/30k"
+                      onClick={() => setIsOpen(false)}
+                      className="block px-3 py-2 text-sm font-medium text-white hover:text-accent transition-colors"
+                    >
+                      30K
+                    </Link>
+
+                  </div>
+
+                </div>
+
               ) : (
-                <a
+
+                <Link
                   key={item.href}
                   href={item.href}
                   onClick={(e) => handleNavClick(e, item.href)}
                   className="block px-3 py-2 text-sm font-medium text-white hover:text-accent transition-colors"
                 >
                   {item.label}
-                </a>
+                </Link>
+
               )
-            )}
+
+            ))}
 
           </div>
         )}
+
       </div>
     </nav>
   )
