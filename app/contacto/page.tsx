@@ -69,8 +69,9 @@ export default function ContactosPage() {
               Cómo llegar
             </Link>
 
+            {/* CORREGIDO: /contacto */}
             <Link
-              href="/contactos"
+              href="/contacto"
               className="text-[#E74238] font-semibold"
             >
               Contactos
@@ -109,11 +110,13 @@ export default function ContactosPage() {
         </h2>
 
         <div className="max-w-4xl space-y-6 text-lg md:text-xl leading-relaxed text-[#331010]/85">
+
           <p>
             Si tienes preguntas sobre inscripciones, distancias, logística
             o cualquier otro detalle de Los Dos Gigantes Ultra Trail,
             contáctanos por el medio que prefieras.
           </p>
+
         </div>
       </section>
 
@@ -135,6 +138,7 @@ export default function ContactosPage() {
               <p className="text-[#E74238] text-sm uppercase tracking-[0.2em] font-semibold mb-4">
                 Correo electrónico
               </p>
+
               <p className="text-2xl md:text-3xl font-bold break-all">
                 chimborazoendurance@gmail.com
               </p>
@@ -149,6 +153,7 @@ export default function ContactosPage() {
               <p className="text-white/70 text-sm uppercase tracking-[0.2em] font-semibold mb-4">
                 WhatsApp
               </p>
+
               <p className="text-2xl md:text-3xl font-bold">
                 +593 98 212 1157
               </p>
@@ -172,6 +177,7 @@ export default function ContactosPage() {
 
         <div className="grid md:grid-cols-2 gap-8">
 
+          {/* INSTAGRAM */}
           <a
             href="https://www.instagram.com/chimborazoendurance/"
             target="_blank"
@@ -181,11 +187,13 @@ export default function ContactosPage() {
             <p className="text-[#E74238] text-sm uppercase tracking-[0.2em] font-semibold mb-4">
               Instagram
             </p>
+
             <p className="text-2xl md:text-3xl font-bold">
               @chimborazoendurance
             </p>
           </a>
 
+          {/* FACEBOOK */}
           <a
             href="https://www.facebook.com/chimborazoendurance"
             target="_blank"
@@ -195,11 +203,13 @@ export default function ContactosPage() {
             <p className="text-[#E74238] text-sm uppercase tracking-[0.2em] font-semibold mb-4">
               Facebook
             </p>
+
             <p className="text-2xl md:text-3xl font-bold">
               @chimborazoendurance
             </p>
           </a>
 
+          {/* TIKTOK */}
           <a
             href="https://www.tiktok.com/@chimborazoendurance"
             target="_blank"
@@ -209,11 +219,13 @@ export default function ContactosPage() {
             <p className="text-[#E74238] text-sm uppercase tracking-[0.2em] font-semibold mb-4">
               TikTok
             </p>
+
             <p className="text-2xl md:text-3xl font-bold">
               @chimborazoendurance
             </p>
           </a>
 
+          {/* YOUTUBE */}
           <a
             href="https://www.youtube.com/@ChimborazoEnduranceSeries"
             target="_blank"
@@ -223,6 +235,7 @@ export default function ContactosPage() {
             <p className="text-[#E74238] text-sm uppercase tracking-[0.2em] font-semibold mb-4">
               YouTube
             </p>
+
             <p className="text-2xl md:text-3xl font-bold">
               Chimborazo Endurance Series
             </p>
@@ -242,12 +255,14 @@ export default function ContactosPage() {
           </p>
 
           <div className="mt-10">
+
             <Link
               href="/los-dos-gigantes"
               className="inline-block border border-white/30 text-white px-7 py-4 rounded-md font-semibold hover:bg-white hover:text-[#331010] transition"
             >
               Volver a Los Dos Gigantes
             </Link>
+
           </div>
 
         </div>
