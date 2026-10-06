@@ -102,12 +102,16 @@ export function Navigation() {
                 /* SUBMENÚ DISTANCIAS */
                 <div key={item.label} className="relative group">
 
-                  <button
-                    className="px-3 py-2 text-sm font-medium text-white hover:text-accent transition-colors"
-                  >
-                    Distancias ▾
-                  </button>
+                  {/* BOTÓN DISTANCIAS */}
+                 <Link
+  href="/distancias"
+  className="flex items-center gap-1 px-3 py-2 text-sm font-medium text-white hover:text-accent transition-colors"
+>
+  <span>Distancias</span>
+  <span className="text-xs">▾</span>
+</Link>
 
+                  {/* MENÚ DESPLEGABLE */}
                   <div className="absolute left-0 top-full hidden group-hover:block pt-2 w-56">
                     <div className="bg-primary border border-accent rounded-md shadow-lg overflow-hidden">
 
@@ -211,9 +215,14 @@ export function Navigation() {
 
                 <div key={item.label}>
 
-                  <div className="px-3 py-2 text-sm font-medium text-white">
+                  {/* DISTANCIAS EN MÓVIL */}
+                  <Link
+                    href="/distancias"
+                    onClick={() => setIsOpen(false)}
+                    className="block px-3 py-2 text-sm font-medium text-white hover:text-accent transition-colors"
+                  >
                     Distancias
-                  </div>
+                  </Link>
 
                   <div className="pl-6 space-y-1">
 
