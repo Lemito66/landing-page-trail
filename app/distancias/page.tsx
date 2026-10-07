@@ -30,7 +30,17 @@ const distancias = [
 export default function DistanciasPage() {
   return (
     <main className="min-h-screen bg-[#F2E7E7] text-[#331010]">
-      
+
+      {/* BOTÓN INICIO */}
+      <div className="absolute right-6 top-6 z-20 md:right-12 md:top-8 lg:right-20">
+        <Link
+          href="/"
+          className="inline-flex items-center border border-[#331010]/30 px-5 py-2.5 text-sm font-semibold uppercase tracking-[0.18em] transition-all duration-300 hover:bg-[#331010] hover:text-[#F2E7E7]"
+        >
+          Inicio
+        </Link>
+      </div>
+
       {/* ENCABEZADO */}
       <section className="px-6 pt-32 pb-16 md:px-12 lg:px-20">
         <div className="mx-auto max-w-7xl">
