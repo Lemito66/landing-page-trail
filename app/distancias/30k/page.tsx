@@ -28,6 +28,16 @@ export default function ThirtyKPage() {
   return (
     <main className="min-h-screen bg-[#F2E7E7] text-[#331010]">
 
+      {/* BOTÓN INICIO */}
+      <div className="absolute right-6 top-6 z-30 md:right-10 md:top-8">
+        <a
+          href="/"
+          className="inline-flex items-center border border-[#F2E7E7]/40 bg-[#331010]/40 px-5 py-2.5 text-sm font-semibold uppercase tracking-[0.18em] text-[#F2E7E7] backdrop-blur-sm transition-all duration-300 hover:bg-[#F2E7E7] hover:text-[#331010]"
+        >
+          Inicio
+        </a>
+      </div>
+
       {/* HERO */}
       <section className="relative min-h-[72vh] overflow-hidden bg-[#331010]">
         <Image
